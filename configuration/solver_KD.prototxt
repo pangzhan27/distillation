@@ -1,0 +1,26 @@
+net: "config/model_KD_m.prototxt"
+
+# test sample 406219/64 = 60
+test_iter: 6347 
+
+# training sample 3676654/64 = 513
+test_interval: 57448
+
+test_initialization: false
+
+display: 57448 
+average_loss: 57448
+
+base_lr: 0.002
+lr_policy: "step"
+stepsize: 57448
+gamma: 0.96
+
+momentum: 0.9
+weight_decay: 0.0002
+
+max_iter: 2872400  
+snapshot: 57448
+snapshot_prefix: "model/m_kd"
+
+solver_mode: GPU
